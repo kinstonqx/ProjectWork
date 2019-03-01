@@ -30,6 +30,154 @@ namespace Test_Framework
             //test to see that the two values are the same
             Assert.AreEqual(AMovie.Movie, SomeMovie);
         }
+
+        [TestMethod]
+       public void MovieIdPropertyOK()
+        {
+          //create an instance of the class we want to create
+          clsMovies AMovie = new clsMovies();
+           //create some test data to assign to the property
+           Int32 MovieId = 1;
+            //assign the data to the property
+            AMovie.MovieId = MovieId;
+            //test to see that the two value are the same
+            Assert.AreEqual(AMovie.MovieId, MovieId);
+}
+
+        [TestMethod]
+        public void ValidMethodOk()
+        {
+            //create an instance of the class we want to create
+            clsMovies AMovie = new clsMovies();
+            //create a string variable to store the result of the validation
+            string Error = "";
+            //create some test data to test the method
+            string SomeMovie = "Shrek";
+            //invoke the method
+            Error = AMovie.Valid(SomeMovie);
+            //test to see that the result is OK
+            Assert.AreEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void MovieMinLessOne()
+        {
+            //create an instance of the class we want to create
+            clsMovies AMovie = new clsMovies();
+            //create a string variable to store the result of the validation
+            string Error = "";
+            //create some test data to test the method
+            string SomeMovie = "";
+            //invoke the method
+            Error = AMovie.Valid(SomeMovie);
+            //test to see that the result is NOT OK
+            Assert.AreNotEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void MovieMinBoundary()
+        {
+            //create an instance of the class we want to create
+            clsMovies AMovie = new clsMovies();
+            //create a string variable to store the result of the validation
+            string Error = "";
+            //create some test data to test the method
+            string SomeMovie = "a";
+            //invoke the method
+            Error = AMovie.Valid(SomeMovie);
+            //test to see that the result is NOT OK
+            Assert.AreEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void MovieMinPlusOne()
+        {
+            //create an instance of the class we want to create
+            clsMovies AMovie = new clsMovies();
+            //create a string variable to store the result of the validation
+            string Error = "";
+            //create some test data to test the method
+            string SomeMovie = "aa";
+            //invoke the method
+            Error = AMovie.Valid(SomeMovie);
+            //test to see that the result is NOT OK
+            Assert.AreEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void MovieMaxLessOne()
+        {
+            //create an instance of the class we want to create
+            clsMovies AMovie = new clsMovies();
+            //create a string variable to store the result of the validation
+            string Error = "";
+            //create some test data to test the method
+            string SomeMovie = "0123456789012345678901234567890123456789012345678";
+            //invoke the method
+            Error = AMovie.Valid(SomeMovie);
+            //test to see that the result is NOT OK
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void MovieMaxBoundary()
+        {
+            //create an instance of the class we want to create
+            clsMovies AMovie = new clsMovies();
+            //create a string variable to store the result of the validation
+            string Error = "";
+            //create some test data to test the method
+            string SomeMovie = "01234567890123456789012345678901234567890123456789";
+            //invoke the method
+            Error = AMovie.Valid(SomeMovie);
+            //test to see that the result is NOT OK
+            Assert.AreEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void MovieMaxPlusOne()
+        {
+            //create an instance of the class we want to create
+            clsMovies AMovie = new clsMovies();
+            //create a string variable to store the result of the validation
+            string Error = "";
+            //create some test data to test the method
+            string SomeMovie = "012345678901234567890123456789012345678901234567890";
+            //invoke the method
+            Error = AMovie.Valid(SomeMovie);
+            //test to see that the result is NOT OK
+            Assert.AreNotEqual(Error, "");
+        }
+
+        [TestMethod]
+        public void MovieMid()
+        {
+            //create an instance of the class we want to create
+            clsMovies AMovie = new clsMovies();
+            //create a string variable to store the result of the validation
+            string Error = "";
+            //create some test data to test the method
+            string SomeMovie = "0123456789012345678901234";
+            //invoke the method
+            Error = AMovie.Valid(SomeMovie);
+            //test to see that the result is NOT OK
+            Assert.AreEqual(Error, "");
+        }
+        [TestMethod]
+        public void MovieExtremeMax()
+        {
+            //create an instance of the class we want to create
+            clsMovies AMovie = new clsMovies();
+            //create a string variable to store the result of the validation
+            string Error = "";
+            //create some test data to test the method
+            string SomeMovie = "";
+            //pad the string with characters
+            SomeMovie = SomeMovie.PadRight(500, 'a');
+            //invoke the method
+            Error = AMovie.Valid(SomeMovie);
+            //test to see that the result is NOT OK
+            Assert.AreNotEqual(Error, "");
+        }
     }
 }
 
