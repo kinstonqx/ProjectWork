@@ -5,7 +5,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Test_Framework
 {
     [TestClass]
-    public class txtMovies
+    public class tstMovies
     {
         [TestMethod]
         public void InstanceOk()
