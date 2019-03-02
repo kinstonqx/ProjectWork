@@ -4,7 +4,7 @@
 
 <html>
     <head id="Head1" runat="server">
-        <title>Sample Master Page</title>
+        <title>Just4Views Cinema</title>
         <link href="Just4Views3.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
@@ -25,7 +25,7 @@
             </nav>
  
             <footer>
-                Footer text here
+                 <p>&copy; <%: DateTime.Now.Year %> - Just4Views Cinema </p>
             </footer>
         </form>
     </body>
