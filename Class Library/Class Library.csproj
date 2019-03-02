@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="clsDataConnection.cs" />
     <Compile Include="clsMovieCollection.cs" />
     <Compile Include="clsMovies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
