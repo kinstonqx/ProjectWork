@@ -1,5 +1,5 @@
 ﻿body {
-    background-color: #6699FF;
+    background-color: #0094ff;
 }
 
 header {
@@ -12,7 +12,7 @@ header {
 }
 
 footer {
-    background-color: #600;
+    background-color: #ff006e;
     height: 10%;
     position: fixed;
     width: 100%;
@@ -35,4 +35,23 @@ article {
     width: 80%;
     top: 10%;
     left: 20%;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto auto;
+}
+
+.outer {
+    border: 1px solid #888;
+    width: 100px;
+    height: 100px;
+}
+
+.inner {
+    display: table-cell;
+    height: 100px;
+    width: 100px;
+    vertical-align: middle;
 }

@@ -34,8 +34,8 @@
            <asp:Button ID="btnSignUp" runat="server" OnClick="btnSignUp_Click" Text="SignUp" /> 
       </div> 
     </div>    
- </div>         
-</div> 
+         
+ 
 
 
 

@@ -11,4 +11,14 @@ public partial class Signup : System.Web.UI.Page
     {
 
     }
+
+    protected void btncancel_Click(object sender, EventArgs e)
+    {
+        Response.Redirect("Default.aspx");
+    }
+
+    protected void btnSignUp_Click(object sender, EventArgs e)
+    {
+
+    }
 }

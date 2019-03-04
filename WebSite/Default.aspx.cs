@@ -19,6 +19,6 @@ public partial class _Default : System.Web.UI.Page
 
     protected void btnSignup_Click(object sender, EventArgs e)
     {
-
+        Response.Redirect("Signup.aspx");
     }
 }

@@ -5,7 +5,7 @@
 <html>
     <head id="Head1" runat="server">
         <title>Just4Views Cinema</title>
-        <link href="Just4Views3.css" rel="stylesheet" type="text/css" />
+        <link href="Just4Views.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <form id="form1" runat="server">
