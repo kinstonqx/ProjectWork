@@ -46,7 +46,7 @@ namespace Test_Framework
             clsMovies TestItem = new clsMovies();
             //set its properties
             TestItem.MovieId = 1;
-            TestItem.Movie = "Shrek",
+            TestItem.Movie = "Shrek";
             //add the item to the test list
             TestList.Add(TestItem);
             //assign the data to the property
@@ -69,7 +69,7 @@ namespace Test_Framework
             clsMovies TestItem = new clsMovies();
             //set its properties
             TestItem.MovieId = 1;
-            TestItem.Movie = "Shrek",
+            TestItem.Movie = "Shrek";
             //add the item to the test list
             TestList.Add(TestItem);
             //assign the data to the property

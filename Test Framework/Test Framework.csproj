@@ -50,9 +50,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="tstCustomer.cs" />
     <Compile Include="tstMovieCollection.cs" />
     <Compile Include="tstMovies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tstShowing.cs" />
+    <Compile Include="tstShowingCollection.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Class Library\Class Library.csproj">
