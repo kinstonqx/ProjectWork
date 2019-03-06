@@ -51,6 +51,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="tstCustomer.cs" />
+    <Compile Include="tstCustomerCollection.cs" />
     <Compile Include="tstMovieCollection.cs" />
     <Compile Include="tstMovies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
