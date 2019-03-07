@@ -21,10 +21,25 @@
             </article>
  
             <nav>
-                Navigation links here
+                <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="news.html">News</a></li>
+        </ul>
             </nav>
  
             <footer>
+                <link rel="stylesheet" href=https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css>
+                <ul>
+				<li><a href="https://www.facebook.com/kancoal"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+				</li>
+				<li><a href="https://twitter.com/kinstonqx"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				</li>
+				<li><a href="https://instagram.com/kinstonqx?r=nametag"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+				</li>
+				<li><a href="https://www.linkedin.com/in/nnamdi-kanu-a7b990137/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				</li>
+			</ul>
                  <p>&copy; <%: DateTime.Now.Year %> - Just4Views Cinema </p>
             </footer>
         </form>
