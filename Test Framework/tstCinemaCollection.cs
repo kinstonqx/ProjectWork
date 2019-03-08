@@ -6,54 +6,52 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace Test_Framework
 {
     [TestClass]
-    public class tstCustomerCollection
+    public class tstCinemaCollection
     {
         [TestMethod]
         public void InstanceOk()
         {
-            //create an instance of the class we want to create
-            clsCustomerCollection AllShowings = new clsCustomerCollection();
+            //create an ninstance of the class we want to create
+            clsCinemaCollection AllCinema = new clsCinemaCollection();
             //test to see that it exists
-            Assert.IsNotNull(AllShowings);
+            Assert.IsNotNull(AllCinema);
         }
 
         [TestMethod]
-        public void CountPropertyOk()
+        public void CountPropertyOK()
         {
             //create the instance of the class we want to create 
-            clsCustomerCollection AllShowings = new clsCustomerCollection();
+            clsCinemaCollection AllCinema = new clsCinemaCollection();
             //create some test data to assign to the property
-            Int32 SomeCount = 1;
+            Int32 SomeCount = 0;
             //assign the data to the property
-            AllShowings.Count = SomeCount;
+            AllCinema.Count = SomeCount;
             //test to see that the two values are the same 
-            Assert.AreEqual(AllShowings.Count, SomeCount);
+            Assert.AreEqual(AllCinema.Count, SomeCount);
         }
 
         [TestMethod]
-        public void AllCustomerOK()
+        public void AllCinemaOK()
         {
             //create an instance of the class we want to create
-            clsCustomerCollection Customer = new clsCustomerCollection();
+            clsCinemaCollection Cinema = new clsCinemaCollection();
             //create some test data to assign to the property
             //in this case the data needs to be a list of objects
-            List<clsCustomer> TestList = new List<clsCustomer>();
+            List<clsCinema> TestList = new List<clsCinema>();
             //add an item to the list
             //create the item of the test data
-            clsCustomer TestItem = new clsCustomer();
+            clsCinema TestItem = new clsCinema();
             //set its properties
-            TestItem.CustomerId = 1;
-            TestItem.Name = "James";
-            TestItem.Mobile = "07896857634";
-            TestItem.Email = "john@gmail.com";
-            TestItem.DateOfBirth = "04/01/1990";
+            TestItem.CinemaId = 12;
+            TestItem.Cinema = "Leicester";
             //add the item to the test list
             TestList.Add(TestItem);
             //assign the data to the property
-            Customer.AllCustomer = TestList;
+            Cinema.AllCinema = TestList;
             //test to see that the two values are the same
-            Assert.AreEqual(Customer.AllCustomer, TestList);
+            Assert.AreEqual(Cinema.AllCinema, TestList);
+
         }
+
     }
 }
-    
