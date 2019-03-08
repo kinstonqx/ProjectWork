@@ -21,11 +21,13 @@
             </article>
  
             <nav>
-                <ul>
+                 <ul>
             <li><a href="home.html">Home</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="news.html">News</a></li>
         </ul>
+
+               
             </nav>
  
             <footer>
@@ -40,6 +42,8 @@
 				<li><a href="https://www.linkedin.com/in/nnamdi-kanu-a7b990137/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
 				</li>
 			</ul>
+                <br />
+                <br />
                  <p>&copy; <%: DateTime.Now.Year %> - Just4Views Cinema </p>
             </footer>
         </form>

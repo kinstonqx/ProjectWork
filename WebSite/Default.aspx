@@ -8,13 +8,29 @@
         <div class="inner">
     <img src="Images/black%20panther.jpg" />
 </div>
-        </div>
-        <hr />
-    <div class="outer">
-        <div class="inner">
-    <img src="Images/shrek.jpg" />
-            </div>
-        </div>
-    <img src="Images/incredibles.jpg" />
-        <
+        <table style="width:100%;">
+            <tr>
+                <td>Product 1</td>
+                <td>£2.50</td>
+                <td>
+                    <a href="Details.aspx?ProductID=1">Details</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Product 2</td>
+                <td>£33.00</td>
+                <td>
+                    <a href="Details.aspx?ProductID=2">Details</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Product 3</td>
+                <td>£14.00</td>
+                <td>
+                    <a href="Details.aspx?ProductID=3">Details</a>
+                </td>
+            </tr>
+        </table>
+    
+        
 </asp:Content>

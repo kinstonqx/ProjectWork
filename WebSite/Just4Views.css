@@ -3,7 +3,7 @@
 }
 
 header {
-    background-color: #600;
+    background-color: white;
     height: 10%;
     position: fixed;
     width: 100%;
@@ -60,15 +60,15 @@ footer {
             }
 
 nav {
-    background-color: #333;
+    background-color: red;
     margin: 0;
     overflow: hidden;
 }
     nav ul {
         margin: 0;
         padding: 0;
+        position:absolute;
     }
-
         nav ul li {
             /* This allow us to arrange list items in a row, without using float */
             display: inline-block;
@@ -83,9 +83,7 @@ nav {
         line-height: 2em;
         padding: 0.5em 0.5em;
         text-decoration: none;
-    }
-
-article {
+        article {
     background-color: #CC66FF;
     position: fixed;
     width: 80%;
