@@ -42,7 +42,7 @@ namespace Test_Framework
             //create the item of the test data
             clsCinema TestItem = new clsCinema();
             //set its properties
-            TestItem.CinemaId = 12;
+            TestItem.CinemaId = 1;
             TestItem.Cinema = "Leicester";
             //add the item to the test list
             TestList.Add(TestItem);

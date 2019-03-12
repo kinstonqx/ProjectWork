@@ -5,6 +5,7 @@
     <asp:Button ID="btnLogin" runat="server" style="z-index: 1; " Text="Login" height="26px" width="55px" OnClick="btnLogin_Click"  />
      <asp:Button ID="btnSignup" runat="server" style="z-index: 1; " Text="Sign Up" height="26px" width="65px" OnClick="btnSignup_Click" />
     <div class="outer">
+</div>
         <div class="inner">
     <img src="Images/black%20panther.jpg" />
 </div>
