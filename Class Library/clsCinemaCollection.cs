@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Class_Library;
 
+
 namespace Class_Library
 {
     public clsCinemaCollection()

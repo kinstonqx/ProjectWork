@@ -6,6 +6,10 @@ namespace Class_Library
     {
         public string Movie { get; set; }
         public int MovieId { get; set; }
+        public int DateReleased { get; set; }
+        public string Director { get; set; }
+        public string Category { get; set; }
+        public string RunTime { get; set; }
 
         public string Valid(string someMovie)
         {

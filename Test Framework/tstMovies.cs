@@ -45,6 +45,59 @@ namespace Test_Framework
 }
 
         [TestMethod]
+        public void DateReleasedPropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsMovies AMovie = new clsMovies();
+            //create some test data to assign to the property
+            int DateReleased = 01/12/2017;
+            //assign the data to the property
+            AMovie.DateReleased = DateReleased;
+            //test to see that the two value are the same
+            Assert.AreEqual(AMovie.DateReleased, DateReleased);
+        }
+
+        [TestMethod]
+        public void DirectorPropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsMovies AMovie = new clsMovies();
+            //create some test data to assign to the property
+            string Director = "John Seagul";
+            //assign the data to the property
+            AMovie.Director = Director;
+            //test to see that the two value are the same
+            Assert.AreEqual(AMovie.Director, Director);
+        }
+
+
+        [TestMethod]
+        public void CategoryPropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsMovies AMovie = new clsMovies();
+            //create some test data to assign to the property
+            string Category = "Action";
+            //assign the data to the property
+            AMovie.Category = Category;
+            //test to see that the two value are the same
+            Assert.AreEqual(AMovie.Category, Category);
+        }
+
+        [TestMethod]
+        public void RunTimePropertyOK()
+        {
+            //create an instance of the class we want to create
+            clsMovies AMovie = new clsMovies();
+            //create some test data to assign to the property
+            string RunTime = "1hr 20mins";
+            //assign the data to the property
+            AMovie.RunTime = RunTime;
+            //test to see that the two value are the same
+            Assert.AreEqual(AMovie.RunTime, RunTime);
+        }
+
+        [TestMethod]
         public void ValidMethodOk()
         {
             //create an instance of the class we want to create
